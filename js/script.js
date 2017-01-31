@@ -1,8 +1,9 @@
-function sendInput() {
-    var z = document.getElementById("textMessage").value;
-//    document.getElementById("demo").innerHTML = x;
-    var x = document.createElement("P");
-    var t = document.createTextNode(z);
-    x.appendChild(t);
-    document.getElementById("demo").appendChild(x);
+var messageIdNumber = 0;
+function sendMessage() {
+    var input = document.getElementById("text_message").value;
+    var createMessage = document.createElement("P");
+    createMessage.textContent = input;
+    createMessage.id = "message_id_" + messageIdNumber;
+    document.getElementById("message_area_id_1").appendChild(createMessage);
+    messageIdNumber++;
 }
