@@ -10,11 +10,19 @@
 </head>
 
 <body>
-
-  <div class="conversation">
-    <input type="text" id="text_message" value="Write a message...">
-    <button name="send_button" onclick="sendMessage()">Send</button>
-    <div class="message_area" id="message_area_id_1">
+  <div class="messеnger">
+    <div class="user_list">
+      <ul>
+        <li class="user">Peter</li>
+        <li class="user">Ben</li>
+        <li class="user">Bruce</li>
+      </ul>
+    </div>
+    <div class="conversation">
+      <div class="message_area" id="message_area_id_1">
+      </div>
+      <input type="text" class="input_field" id="text_message" value="Write a message...">
+      <button name="send_button" onclick="sendMessage()">Send</button>
     </div>
   </div>
   <script src="js/script.js"></script>
