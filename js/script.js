@@ -7,4 +7,5 @@ function sendMessage() {
     createMessage.className = "message";
     document.getElementById("message_area_id_1").appendChild(createMessage);
     messageIdNumber++;
+    document.getElementById("text_message").value = "";
 }
